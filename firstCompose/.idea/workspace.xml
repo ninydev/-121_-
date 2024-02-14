@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b2cf086-1f39-454f-82eb-1396e5197f6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+    <list default="true" id="0b2cf086-1f39-454f-82eb-1396e5197f6e" name="Changes" comment="Docker Compose">
       <change beforePath="$PROJECT_DIR$/../Azure.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../Azure.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api_node/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api_node/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api_node/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api_node/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +42,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "javascript.nodejs.core.library.configured.version": "18.17.1",
@@ -98,8 +96,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707932702143</updated>
-      <workItem from="1707932703182" duration="1482000" />
+      <workItem from="1707932703182" duration="2248000" />
     </task>
+    <task id="LOCAL-00001" summary="Docker Compose">
+      <option name="closed" value="true" />
+      <created>1707934446315</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707934446315</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,5 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Docker Compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker Compose" />
   </component>
 </project>
