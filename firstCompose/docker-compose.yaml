@@ -1,0 +1,28 @@
+# Версия
+version: '3'
+
+services:
+
+  # Внутри этой машинки будет работать код на php
+  # например laravel - RESTful API
+  api.php:
+    build: ./backend/api_php
+
+  # Внутри этой машинки будут постоянные соединения
+  # https://socket.io/docs/v4/redis-adapter/
+  # мы реализуем вот такой тип соединения
+  api.node:
+    build: ./backend/api_node
+
+  # SQL база данных
+  db.mysql:
+    image: mysql
+
+  # InMemory DB база данных
+  db.redis:
+    image: redis
+
+# Тип доступа в сеть
+networks:
+  itsteppv121azure:
+    driver: bridge

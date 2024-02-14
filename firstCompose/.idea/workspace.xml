@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b2cf086-1f39-454f-82eb-1396e5197f6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api_node/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api_node/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api_node/src/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api_php/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../Azure.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api_node/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api_node/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api_node/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api_node/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "javascript.nodejs.core.library.configured.version": "18.17.1",
@@ -63,6 +64,25 @@
       <recent name="$PROJECT_DIR$/backend/api_php" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,11 +98,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707932702143</updated>
-      <workItem from="1707932703182" duration="372000" />
+      <workItem from="1707932703182" duration="1482000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
