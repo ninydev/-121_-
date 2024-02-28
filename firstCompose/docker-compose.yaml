@@ -17,6 +17,21 @@ services:
   # SQL база данных
   db.mysql:
     image: mysql
+    ports:
+      - "3306:3306"
+    env_file: # Мне нужно сообщить - какие настройки использовать
+      - .env
+    environment: # Плохой вариант - описать переменные прямо тут
+      - SERVER_NAME=db.mySql
+
+  # Добавим утилиту для удобства работы с базой и дадим ей порт
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db.mysql
 
   # InMemory DB база данных
   db.redis:
