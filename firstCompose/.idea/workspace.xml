@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b2cf086-1f39-454f-82eb-1396e5197f6e" name="Changes" comment="Docker Compose">
-      <change afterPath="$PROJECT_DIR$/example.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Azure.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../Azure.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.$Azure.drawio.dtmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api/src/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api/src/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/example.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +36,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.2" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2cMsIZqVamO5AwfdbF7oi2Q2zia" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,8 +53,9 @@
     "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "javascript.nodejs.core.library.configured.version": "18.17.1",
-    "javascript.nodejs.core.library.typings.version": "18.17.19",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "20.11.1",
+    "javascript.nodejs.core.library.typings.version": "20.11.21",
     "last_opened_file_path": "/home/keeper/PhpstormProjects/-121_-/firstCompose",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -72,7 +79,9 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -105,6 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707932702143</updated>
       <workItem from="1707932703182" duration="4535000" />
+      <workItem from="1709135936648" duration="2219000" />
     </task>
     <task id="LOCAL-00001" summary="Docker Compose">
       <option name="closed" value="true" />
@@ -122,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707935031217</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Docker Compose">
+      <option name="closed" value="true" />
+      <created>1709135960968</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709135960968</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

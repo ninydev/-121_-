@@ -1,0 +1,55 @@
+# Версия
+version: '3'
+
+services:
+
+  pv121azure.api.node:
+    build: backend/api_node
+    ports:
+      - "3000:3000"
+    environment: # Плохой вариант - описать переменные прямо тут
+      - SERVER_NAME=api_node
+
+  # Nginx
+  # Этот микросервис принимает запросы от пользователя
+  # а уже внутри решает - куда - к какому микросвервису
+  # отправить его на обработку
+  pv121azure.nginx:
+    image: nginx:alpine
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
+    depends_on:
+      - pv121azure.api_node
+
+  # SQL база данных
+  pv121azure.db.mysql:
+    image: mysql
+    ports:
+      - "3306:3306"
+    volumes: # Для сохранения данных я смонтирую папку
+      - ./volumes/mysql:/var/lib/mysql
+    env_file: # Мне нужно сообщить - какие настройки использовать
+      - .env
+    environment: # Плохой вариант - описать переменные прямо тут
+      - SERVER_NAME=db.mySql
+
+  # Добавим утилиту для удобства работы с базой и дадим ей порт
+  pv121azure.phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=pv121azure.db.mysql
+
+  # InMemory DB база данных
+  pv121azure.db.redis:
+    image: redis
+
+
+# Тип доступа в сеть
+#networks:
+#  itsteppv121azure:
+#    driver: bridge
