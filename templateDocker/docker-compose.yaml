@@ -3,11 +3,14 @@ version: '3'
 
 services:
 
+  pv121azure.api.laravel:
+    build: backend/api_laravel
+    environment:
+      - SERVER_NAME=api_laravel
+
   pv121azure.api.node:
     build: backend/api_node
-    ports:
-      - "3000:3000"
-    environment: # Плохой вариант - описать переменные прямо тут
+    environment:
       - SERVER_NAME=api_node
 
   # Nginx
@@ -21,7 +24,8 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - pv121azure.api_node
+      - pv121azure.api.node
+      - pv121azure.api.laravel
 
   # SQL база данных
   pv121azure.db.mysql:

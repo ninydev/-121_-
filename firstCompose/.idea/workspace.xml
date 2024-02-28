@@ -5,16 +5,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b2cf086-1f39-454f-82eb-1396e5197f6e" name="Changes" comment="Docker Compose">
-      <change afterPath="$PROJECT_DIR$/../.$Azure.drawio.dtmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api/src/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api/src/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/example.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Console/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Exceptions/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Middleware/TrustHosts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Middleware/ValidateSignature.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/broadcasting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/cors.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/hashing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/config/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/routes/channels.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/tests/CreatesApplication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../templateDocker/backend/api_laravel/src/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.$Azure.drawio.dtmp" beforeDir="false" afterPath="$PROJECT_DIR$/../.$Azure.drawio.dtmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../templateDocker/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../templateDocker/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../templateDocker/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../templateDocker/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
