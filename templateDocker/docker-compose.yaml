@@ -3,6 +3,9 @@ version: '3'
 
 services:
 
+  pv121azure.front.public:
+    build: frontend/public
+
   pv121azure.api.laravel:
     build: backend/api_laravel
     environment:
@@ -12,6 +15,17 @@ services:
     build: backend/api_node
     environment:
       - SERVER_NAME=api_node
+
+
+  pv121azure.api.hiload.jonny:
+    build: backend/api_node
+    environment:
+      - SERVER_NAME=api.Jonny
+
+  pv121azure.api.hiload.sunny:
+    build: backend/api_node
+    environment:
+      - SERVER_NAME=api.Sunny
 
   # Nginx
   # Этот микросервис принимает запросы от пользователя
@@ -26,6 +40,9 @@ services:
     depends_on:
       - pv121azure.api.node
       - pv121azure.api.laravel
+      - pv121azure.api.hiload.jonny
+      - pv121azure.api.hiload.sunny
+      - pv121azure.front.public
 
   # SQL база данных
   pv121azure.db.mysql:
