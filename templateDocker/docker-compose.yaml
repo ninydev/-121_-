@@ -8,6 +8,9 @@ services:
 
   pv121azure.api.laravel:
     build: backend/api_laravel
+    # Удобно вести разработку - поскольку данные (и файлы) из главной машины сразу попадают в контейнер
+    volumes:
+      - ./backend/api_laravel/src:/app
     environment:
       - SERVER_NAME=api_laravel
 

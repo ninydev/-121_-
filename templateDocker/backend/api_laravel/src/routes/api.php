@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UploadFileController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('laravel/entity', function () {
     return " Hello Laravel";
 });
+
+Route::post('laravel/file', UploadFileController::class)->name('api.file.upload');
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

@@ -44,6 +44,15 @@ return [
             'throw' => false,
         ],
 
+        // Выделенный диск для хранения файлов типа
+        'for_files' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/files'),
+            'url' => env('APP_URL').'/storage/files',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

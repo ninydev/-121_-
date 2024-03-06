@@ -5,40 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b2cf086-1f39-454f-82eb-1396e5197f6e" name="Changes" comment="Docker Compose">
-      <change afterPath="$PROJECT_DIR$/../.$Azure.drawio.bkp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/components/TheWelcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/components/WelcomeItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/stores/counter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/views/AboutView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../templateDocker/frontend/public/src/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.$Azure.drawio.dtmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.$Azure.drawio.bkp" beforeDir="false" afterPath="$PROJECT_DIR$/../.$Azure.drawio.bkp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Azure.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../Azure.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templateDocker/backend/api_node/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../templateDocker/backend/api_node/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templateDocker/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../templateDocker/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templateDocker/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../templateDocker/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707932702143</updated>
       <workItem from="1707932703182" duration="4535000" />
-      <workItem from="1709135936648" duration="2219000" />
+      <workItem from="1709135936648" duration="2223000" />
     </task>
     <task id="LOCAL-00001" summary="Docker Compose">
       <option name="closed" value="true" />
