@@ -6,6 +6,22 @@ services:
   pv121azure.front.public:
     build: frontend/public
 
+  pv121azure.storage.minio:
+    container_name: pv121azure.storage.minio
+    image: minio/minio:latest
+    command: server --console-address :9001 /data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - ./volumes/minio:/data
+    expose:
+      - "9000"
+      - "9001"
+    environment:
+      MINIO_ROOT_USER: user
+      MINIO_ROOT_PASSWORD: password
+
   pv121azure.api.laravel:
     build: backend/api_laravel
     # Удобно вести разработку - поскольку данные (и файлы) из главной машины сразу попадают в контейнер

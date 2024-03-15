@@ -45,11 +45,24 @@ return [
         ],
 
         // Выделенный диск для хранения файлов типа
+//        'for_files' => [
+//            'driver' => 'local',
+//            'root' => storage_path('app/public/files'),
+//            'url' => env('APP_URL').'/storage/files',
+//            'visibility' => 'public',
+//            'throw' => false,
+//        ],
+//
         'for_files' => [
-            'driver' => 'local',
-            'root' => storage_path('app/public/files'),
-            'url' => env('APP_URL').'/storage/files',
+            'driver' => 's3',
+            'key' => 'ozAMl3ZYQtpa65A0MLy8',
+            'secret' => 'pFGZc50IbOYGuw0MPqjAKLdY6PIYxWNEqmbkMThd',
+            'region' => 'eu-west-1',
+            'bucket' => 'files',
+            'url' => 'http://localhost:9000/files',
+            'endpoint' => 'http://pv121azure.storage.minio:9000',
             'visibility' => 'public',
+            'use_path_style_endpoint' => true,
             'throw' => false,
         ],
 
@@ -57,7 +70,7 @@ return [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
             'secret' => env('AWS_SECRET_ACCESS_KEY'),
-            'region' => env('AWS_DEFAULT_REGION'),
+            'region' => env('ua'),
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
