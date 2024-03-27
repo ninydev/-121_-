@@ -1,6 +1,8 @@
 package org.itstep.storages.controllers;
 
+import lombok.AllArgsConstructor;
 import org.itstep.storages.responces.UploadFileResponse;
+import org.itstep.storages.services.StorageService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,13 +18,10 @@ import java.nio.file.Paths;
 
 @RestController
 @RequestMapping("api/files")
+@AllArgsConstructor
 public class UploadFileController {
 
-    // Путь к локальной папке на сервере, где будут храниться файлы
-    private static final String localStorageDir = "/home/keeper/temp/spring/pv121";
-
-    // Папка в точке хранения
-    private static final String bucketName = "avatars";
+    private final StorageService storageService;
 
     @PostMapping
     public ResponseEntity<UploadFileResponse>
@@ -40,31 +39,7 @@ public class UploadFileController {
         response.setSize(file.getSize());
         response.setContentType(file.getContentType());
 
-        try {
-            // Определяем путь к папке, куда будем сохранять файл
-            String uploadDir = localStorageDir + File.separator + bucketName;
-
-            // Создаем директорию, если она не существует
-            File directory = new File(uploadDir);
-            if (!directory.exists()) {
-                directory.mkdirs();
-            }
-
-            // Получаем байты файла
-            byte[] bytes = file.getBytes();
-
-            // Создаем путь к файлу
-            Path filePath = Paths.get(uploadDir + File.separator + file.getOriginalFilename());
-
-            // Записываем байты файла в созданный путь
-            Files.write(filePath, bytes);
-
-            // Файл успешно загружен
-            response.setFileUrl(filePath.toString());
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null; // Ошибка загрузки файла
-        }
+        response.setFileUrl(storageService.put("avatars", file));
 
         // Выдаем результаты операции
         return ResponseEntity.ok(response);
