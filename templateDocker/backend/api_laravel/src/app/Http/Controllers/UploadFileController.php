@@ -21,7 +21,7 @@ class UploadFileController extends Controller
         $path = $file->getClientOriginalName();
 
         // Оптимальным является выделение корзины в отдельную настройку
-        // так дуобнее управлять наборами файлов
+        // так удобнее управлять наборами файлов
         Storage::disk('for_files')->put($path, $file->getContent());
         $fileUrl = Storage::disk('for_files')->url($path);
 
