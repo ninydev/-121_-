@@ -1,5 +1,6 @@
 package org.itstep.storages.drivers.storages;
 
 public enum DriverEnum {
-    local
+    Local, // Локальные диски
+    MinIo // Хранилище типа MinIo
 }

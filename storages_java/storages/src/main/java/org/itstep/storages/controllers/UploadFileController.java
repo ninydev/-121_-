@@ -1,6 +1,7 @@
 package org.itstep.storages.controllers;
 
 import lombok.AllArgsConstructor;
+import org.itstep.storages.drivers.storages.DriverEnum;
 import org.itstep.storages.responces.UploadFileResponse;
 import org.itstep.storages.services.StorageService;
 import org.springframework.http.ResponseEntity;
@@ -27,6 +28,10 @@ public class UploadFileController {
     public ResponseEntity<UploadFileResponse>
     uploadFile(@RequestParam("file") MultipartFile file) throws Exception {
 
+        storageService
+                .disk(DriverEnum.Local)
+                .put("avatars", "blonda.jpg", file);
+
         if (file.isEmpty()) {
             throw new Exception("File is Empty");
         }
@@ -39,7 +44,7 @@ public class UploadFileController {
         response.setSize(file.getSize());
         response.setContentType(file.getContentType());
 
-        response.setFileUrl(storageService.put("avatars", file));
+        response.setFilePath(storageService.put("avatars", file.getOriginalFilename(), file));
 
         // Выдаем результаты операции
         return ResponseEntity.ok(response);
